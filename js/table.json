@@ -1,0 +1,67 @@
+{
+  "priceTable": [
+    {
+      "from": "0",
+      "to": "100",
+      "discount": "0",
+      "price": "100"
+    },
+    {
+      "from": "101",
+      "to": "500",
+      "discount": "20",
+      "price": "80"
+    }
+  ],
+  "clientTable": [
+    {
+    "clientName": "client1",
+    "from": "2016-11-30",
+    "to": "2016-12-30"
+    },
+    {
+    "clientName": "client2",
+    "from": "2016-11-30",
+    "to": "2016-11-01"
+    },
+    {
+    "clientName": "client3",
+    "from": "2016-11-30",
+    "to": "2016-12-30"
+    }
+  ],
+  "campaignsTable": [
+    {
+    "campaignName": "Company 1",
+    "from": "2016-11-30",
+    "to": "2016-12-30"
+    },
+    {
+    "campaignName": "Company 2",
+    "from": "2016-11-30",
+    "to": "2016-12-30"
+    },
+    {
+    "campaignName": "Company 3",
+    "from": "2016-11-30",
+    "to": "2016-12-30"
+    }
+  ],
+  "vouchersTable": [
+    {
+    "voucherName": "Voucher 1",
+    "from": "2016-11-30",
+    "to": "2016-12-30"
+    },
+    {
+    "voucherName": "Voucher 2",
+    "from": "2016-11-30",
+    "to": "2016-12-30"
+    },
+    {
+    "voucherName": "Voucher 3",
+    "from": "2016-11-30",
+    "to": "2016-12-30"
+    }
+  ]
+}

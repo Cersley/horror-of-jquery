@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Заголовок</title>
+
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/jquery-ui.min.js"></script>
+	<script src="libs/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="libs/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/jquery-ui.min.css">
+
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+	<header>
+
+		<div class="container-flexible">
+			<div class="row">
+				<dic class="col-md-12">
+					<nav class="text-center nav">
+						<ul class="list-unstyled list-inline list-menu">
+							<li>About</li>
+							<li>Features</li>
+							<li>Modules</li>
+							<li>Exam</li>
+							<li>Rewards</li>
+							<li>Marketing</li>
+							<li class="active">Sales</li>
+							<li>Preview</li>
+							<li>Publish</li>
+						</ul>
+					</nav>
+				</dic>
+			</div>
+		</div>
+
+	</header>
+
+	<main>
+
+		<div class="container">
+			<div class="row">
+
+<!-- 111111 -->
+
+				<div class="col-md-4 col-md-offset-4">
+					<section class="default-price">
+						<div class="text-center block-name">Default Price</div>
+
+						<div class="form-group">
+							<div class="row">
+								<span class="price-label col-md-4 no-pad-r">
+									Price model
+								</span>
+								<div class="col-md-8 no-pad-l">
+									<div id="priceTabs">
+										<span class="input-group-addon btn btn-primary price-btn">
+											Flat
+										</span>
+										<span class="input-group-addon btn btn-primary price-btn active">
+											Variable
+										</span>
+										<span class="input-group-addon btn btn-primary price-btn">
+											Free
+										</span>
+									</div>
+
+									<div class="tabs" id="tab">
+										<div class="flat-tab none" id="tab1">
+											<input type="text"
+												class="form-control flat-input" placeholder="Price">
+											<input type="button"
+												class="btn btn-default flat-btn" value="Ok">
+										</div>
+										<div class="t-price" id="tab2">
+											<div class="table-responsive">
+												<table class="table table-bordered" id="defaultPrice">
+													<colgroup>
+														<col span="2" style="width: 15%">
+														<col span="1" style="width: 35%">
+													</colgroup>
+													<thead>
+														<tr>
+															<td>From</td>
+															<td>To</td>
+															<td>% Discount</td>
+															<td>Price</td>
+														</tr>
+													</thead>
+													<tbody id="addRow">
+														<tr>
+															<td colspan="4">
+																<div class="add-row">
+																	<span>+</span>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+													<tfoot class="none" id="newRow">
+														<tr class="var-input-field">
+															<td>
+																<input type="text" id="val1"
+																	class="form-control price-input variable-input">
+															</td>
+															<td>
+																<input type="text" id="val2"
+																	class="form-control price-input variable-input">
+															</td>
+															<td>
+																<input type="text" id="val3"
+																	class="form-control price-input variable-input">
+															</td>
+															<td>
+																<input type="text" id="val4"
+																	class="form-control price-input variable-input">
+															</td>
+														</tr>
+														<tr>
+															<td colspan="4">
+																	<div class="var-btn-wrapper">
+																		<span class="btn btn-primary flat-btn ok">ok</span>
+																		<span class="btn btn-default flat-btn no">no</span>
+																	</div>
+															</td>
+														</tr>
+													</tfoot>
+												</table>
+											</div>
+										</div>
+										<div class="free-tab none" id="tab3">
+											Free Prise
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="row">
+								<span class="price-label col-md-4 no-pad-r">
+									Expiry
+								</span>
+								<div class="col-md-8 no-pad-l">
+									<div id="expiryTabs">
+										<span class="input-group-addon btn btn-primary price-btn">
+											Plays
+										</span>
+										<span class="input-group-addon btn btn-primary flat-btn active">
+											Time
+										</span>
+										<span class="input-group-addon btn btn-primary price-btn infin">
+											&#8734;
+										</span>
+									</div>
+
+									<div class="tabs" id="expiryTab">
+										<div class="plays-tab none" id="expiryTab1">
+											Plays
+										</div>
+										<div class="" id="expiryTab2">
+											<div class="date-tab">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="col-md-3 no-pad">
+															<input type="text" class="form-control price-input"
+																placeholder="12">
+														</div>
+														<div class="col-md-8 col-md-offset-1 no-pad">
+															<select class="form-control price-input">
+															  <option selected>Months</option>
+															  <option>Days</option>
+															  <option>Years</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="free-tab none" id="expiryTab3">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</section>
+				</div>
+
+				<div class="clearfix"></div>
+
+
+<!-- 22222222 -->
+
+
+				<div class="col-md-4">
+					<section class="default-price">
+						<div class="text-center block-name">Discounts</div>
+						<div class="client-list">
+							<div class="row">
+								<div class="col-md-4 no-pad-r">
+									Client
+								</div>
+								<div class="col-md-8 no-pad-l">
+									<select class="form-control price-input" id="clientList">
+										<option disabled selected></option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="row">
+								<span class="price-label col-md-4 no-pad-r">
+									Price model
+								</span>
+								<div class="col-md-8 no-pad-l">
+									<div id="discountsPriceTabs">
+										<span class="input-group-addon btn btn-primary price-btn">
+											Flat
+										</span>
+										<span class="input-group-addon btn btn-primary price-btn active">
+											Variable
+										</span>
+										<span class="input-group-addon btn btn-primary price-btn">
+											Free
+										</span>
+									</div>
+
+									<div class="tabs" id="discountsTab">
+										<div class="flat-tab none" id="discountsTab1">
+											<div class="flay-btn price-tab">Price</div>
+											<input type="text"
+												class="form-control flat-input" placeholder="%">
+											<input type="button"
+												class="btn btn-default flat-btn" value="Ok">
+										</div>
+										<div class="t-price" id="discountsTab2">
+											<div class="table-responsive">
+												<table class="table table-bordered" id="discountsPrice">
+													<colgroup>
+														<col span="2" style="width: 15%">
+														<col span="1" style="width: 35%">
+													</colgroup>
+													<thead>
+														<tr>
+															<td>From</td>
+															<td>To</td>
+															<td>% Discount</td>
+															<td>Price</td>
+														</tr>
+													</thead>
+													<tbody id="discountsAddRow">
+														<tr>
+															<td colspan="4">
+																<div class="add-row">
+																	<span>+</span>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+													<tfoot class="none" id="discountsNewRow">
+														<tr class="var-input-field">
+															<td>
+																<input type="text" id="discountsVal1"
+																	class="form-control price-input variable-input">
+															</td>
+															<td>
+																<input type="text" id="discountsVal2"
+																	class="form-control price-input variable-input">
+															</td>
+															<td>
+																<input type="text" id="discountsVal3"
+																	class="form-control price-input variable-input">
+															</td>
+															<td>
+																<input type="text" id="discountsVal4"
+																	class="form-control price-input variable-input">
+															</td>
+														</tr>
+														<tr>
+															<td colspan="4">
+																	<div class="var-btn-wrapper">
+																		<span class="btn btn-primary flat-btn ok">ok</span>
+																		<span class="btn btn-default flat-btn no">no</span>
+																	</div>
+															</td>
+														</tr>
+													</tfoot>
+												</table>
+											</div>
+										</div>
+										<div class="free-tab none" id="discountsTab3">
+											Free Prise
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="row">
+								<span class="price-label col-md-4 no-pad-r">
+									Expiry
+								</span>
+								<div class="col-md-8 no-pad-l">
+									<div id="discountsExpiryTabs">
+										<span class="input-group-addon btn btn-primary price-btn">
+											Plays
+										</span>
+										<span class="input-group-addon btn btn-primary flat-btn active">
+											Time
+										</span>
+										<span class="input-group-addon btn btn-primary price-btn infin">
+											&#8734;
+										</span>
+									</div>
+
+									<div class="tabs" id="discountsExpiryTab">
+										<div class="plays-tab none" id="discountsExpiryTab1">
+											Plays
+										</div>
+										<div class="" id="discountsExpiryTab2">
+											<div class="date-tab">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="col-md-3 no-pad">
+															<input type="text" class="form-control price-input"
+																placeholder="12">
+														</div>
+														<div class="col-md-8 col-md-offset-1 no-pad">
+															<select class="form-control price-input">
+															  <option selected>Months</option>
+															  <option>Days</option>
+															  <option>Years</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="free-tab none" id="discountsExpiryTab3">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="add-item" id="discountsAddClient">
+							<span>+</span>
+						</div>
+
+					</section>
+				</div>
+
+<!-- 333333333 -->
+
+				<div class="col-md-4">
+					<section class="default-price">
+						<div class="text-center block-name">Campaigns</div>
+						<div class="client-list">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+			              <div class="input-group">
+			                  <input type="text" class="form-control" id="date1"
+													placeholder="From" />
+			                  <span class="input-group-addon">
+													<span class="glyphicon glyphicon-calendar"></span>
+			                  </span>
+			              </div>
+			          	</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="form-group">
+										<div class="input-group">
+			                  <input type="text" class="form-control" id="date2"
+													placeholder="To"/>
+			                  <span class="input-group-addon">
+													<span class="glyphicon glyphicon-calendar"></span>
+			                  </span>
+			              </div>
+								</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="row">
+								<span class="price-label col-md-4 no-pad-r">
+									Price model
+								</span>
+								<div class="col-md-8 no-pad-l">
+									<div id="campaignsPriceTabs">
+										<span class="input-group-addon btn btn-primary price-btn">
+											Flat
+										</span>
+										<span class="input-group-addon btn btn-primary price-btn active">
+											Variable
+										</span>
+										<span class="input-group-addon btn btn-primary price-btn">
+											Free
+										</span>
+									</div>
+
+									<div class="tabs" id="campaignsTab">
+										<div class="flat-tab none" id="campaignsTab1">
+											<div class="flay-btn price-tab">Price</div>
+											<input type="text"
+												class="form-control flat-input" placeholder="%">
+											<input type="button"
+												class="btn btn-default flat-btn" value="Ok">
+										</div>
+										<div class="t-price" id="campaignsTab2">
+											<div class="table-responsive">
+												<table class="table table-bordered" id="campaignsPrice">
+													<colgroup>
+														<col span="2" style="width: 15%">
+														<col span="1" style="width: 35%">
+													</colgroup>
+													<thead>
+														<tr>
+															<td>From</td>
+															<td>To</td>
+															<td>% Discount</td>
+															<td>Price</td>
+														</tr>
+													</thead>
+													<tbody id="campaignsAddRow">
+														<tr>
+															<td colspan="4">
+																<div class="add-row">
+																	<span>+</span>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+													<tfoot class="none" id="campaignsNewRow">
+														<tr class="var-input-field">
+															<td>
+																<input type="text" id="campaignsVal1"
+																	class="form-control price-input variable-input">
+															</td>
+															<td>
+																<input type="text" id="campaignsVal2"
+																	class="form-control price-input variable-input">
+															</td>
+															<td>
+																<input type="text" id="campaignsVal3"
+																	class="form-control price-input variable-input">
+															</td>
+															<td>
+																<input type="text" id="campaignsVal4"
+																	class="form-control price-input variable-input">
+															</td>
+														</tr>
+														<tr>
+															<td colspan="4">
+																	<div class="var-btn-wrapper">
+																		<span class="btn btn-primary flat-btn ok">ok</span>
+																		<span class="btn btn-default flat-btn no">no</span>
+																	</div>
+															</td>
+														</tr>
+													</tfoot>
+												</table>
+											</div>
+										</div>
+										<div class="free-tab none" id="campaignsTab3">
+											Free Prise
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="row">
+								<span class="price-label col-md-4 no-pad-r">
+									Expiry
+								</span>
+								<div class="col-md-8 no-pad-l">
+									<div id="campaignsExpiryTabs">
+										<span class="input-group-addon btn btn-primary price-btn">
+											Plays
+										</span>
+										<span class="input-group-addon btn btn-primary flat-btn active">
+											Time
+										</span>
+										<span class="input-group-addon btn btn-primary price-btn infin">
+											&#8734;
+										</span>
+									</div>
+
+									<div class="tabs" id="campaignsExpiryTab">
+										<div class="plays-tab none" id="campaignsExpiryTab1">
+											Plays
+										</div>
+										<div class="" id="campaignsExpiryTab2">
+											<div class="date-tab">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="col-md-3 no-pad">
+															<input type="text" class="form-control price-input"
+																placeholder="12">
+														</div>
+														<div class="col-md-8 col-md-offset-1 no-pad">
+															<select class="form-control price-input">
+																<option selected>Months</option>
+																<option>Days</option>
+																<option>Years</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="free-tab none" id="campaignsExpiryTab3">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="client-list">
+							<div class="row">
+								<span class="price-label col-md-4 no-pad-r">
+									Name
+								</span>
+								<div class="col-md-8 no-pad-l">
+									<input type="text" class="form-control price-input"
+										id="compaignNameInput" placeholder="Campaign name">
+								</div>
+							</div>
+						</div>
+
+						<div class="add-item" id="campaignsAddClient">
+							<span>+</span>
+						</div>
+
+					</section>
+				</div>
+
+<!-- 44444444444 -->
+
+				<div class="col-md-4">
+					<section class="default-price">
+						<div class="text-center block-name">Vouchers</div>
+
+						<div class="form-group">
+							<div class="row">
+								<span class="price-label col-md-4 no-pad-r">
+									Price model
+								</span>
+								<div class="col-md-8 no-pad-l">
+									<div id="vouchersPriceTabs">
+										<span class="input-group-addon btn btn-primary price-btn">
+											Flat
+										</span>
+										<span class="input-group-addon btn btn-primary price-btn active">
+											Variable
+										</span>
+										<span class="input-group-addon btn btn-primary price-btn">
+											Free
+										</span>
+									</div>
+
+									<div class="tabs" id="vouchersTab">
+										<div class="flat-tab none" id="vouchersTab1">
+											<div class="flay-btn price-tab">Price</div>
+											<input type="text"
+												class="form-control flat-input" placeholder="%">
+											<input type="button"
+												class="btn btn-default flat-btn" value="Ok">
+										</div>
+										<div class="t-price" id="vouchersTab2">
+											<div class="table-responsive">
+												<table class="table table-bordered" id="vouchersPrice">
+													<colgroup>
+														<col span="2" style="width: 15%">
+														<col span="1" style="width: 35%">
+													</colgroup>
+													<thead>
+														<tr>
+															<td>From</td>
+															<td>To</td>
+															<td>% Discount</td>
+															<td>Price</td>
+														</tr>
+													</thead>
+													<tbody id="vouchersAddRow">
+														<tr>
+															<td colspan="4">
+																<div class="add-row">
+																	<span>+</span>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+													<tfoot class="none" id="vouchersNewRow">
+														<tr class="var-input-field">
+															<td>
+																<input type="text" id="vouchersVal1"
+																	class="form-control price-input variable-input">
+															</td>
+															<td>
+																<input type="text" id="vouchersVal2"
+																	class="form-control price-input variable-input">
+															</td>
+															<td>
+																<input type="text" id="vouchersVal3"
+																	class="form-control price-input variable-input">
+															</td>
+															<td>
+																<input type="text" id="vouchersVal4"
+																	class="form-control price-input variable-input">
+															</td>
+														</tr>
+														<tr>
+															<td colspan="4">
+																	<div class="var-btn-wrapper">
+																		<span class="btn btn-primary flat-btn ok">ok</span>
+																		<span class="btn btn-default flat-btn no">no</span>
+																	</div>
+															</td>
+														</tr>
+													</tfoot>
+												</table>
+											</div>
+										</div>
+										<div class="free-tab none" id="vouchersTab3">
+											Free Prise
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="row">
+								<span class="price-label col-md-4 no-pad-r">
+									Expiry
+								</span>
+								<div class="col-md-8 no-pad-l">
+									<div id="vouchersExpiryTabs">
+										<span class="input-group-addon btn btn-primary price-btn">
+											Plays
+										</span>
+										<span class="input-group-addon btn btn-primary flat-btn active">
+											Time
+										</span>
+										<span class="input-group-addon btn btn-primary price-btn infin">
+											&#8734;
+										</span>
+									</div>
+
+									<div class="tabs" id="vouchersExpiryTab">
+										<div class="plays-tab none" id="vouchersExpiryTab1">
+											Plays
+										</div>
+										<div class="" id="vouchersExpiryTab2">
+											<div class="date-tab">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="col-md-3 no-pad">
+															<input type="text" class="form-control price-input"
+																placeholder="12">
+														</div>
+														<div class="col-md-8 col-md-offset-1 no-pad">
+															<select class="form-control price-input">
+																<option selected>Months</option>
+																<option>Days</option>
+																<option>Years</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="free-tab none" id="vouchersExpiryTab3">
+											Free Prise
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="client-list voucher">
+							<div class="row">
+								<span class="price-label col-md-4 no-pad-r">
+									Code
+								</span>
+								<div class="col-md-8 no-pad-l">
+									<input type="text" class="form-control price-input"
+										id="voucherVExpiryCode" placeholder="xTy43ixnow">
+									<span class="voucher-code">✉</span>
+								</div>
+							</div><span class="voucher-code">✉</span>
+						</div>
+
+						<div class="client-list voucher">
+							<div class="row">
+								<span class="price-label col-md-4 no-pad-r">
+									Name
+								</span>
+								<div class="col-md-8 no-pad-l">
+									<input type="text" class="form-control price-input"
+										id="voucherVExpiryInput" placeholder="Voucher name">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="row">
+								<span class="price-label col-md-4 no-pad-r">
+									Voucher expiry
+								</span>
+								<div class="col-md-8 no-pad-l">
+									<div id="vouchersVExpiryTabs">
+										<span class="input-group-addon btn btn-primary price-btn">
+											Times
+										</span>
+										<span class="input-group-addon btn btn-primary flat-btn active">
+											Time
+										</span>
+										<span class="input-group-addon btn btn-primary price-btn infin">
+											&#8734;
+										</span>
+									</div>
+
+									<div class="tabs" id="vouchersVExpiryTab">
+										<div class="plays-tab none" id="vouchersVExpiryTab1">
+											Times
+										</div>
+										<div class="" id="vouchersVExpiryTab2">
+											<div class="date-tab">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="col-md-3 no-pad">
+															<input type="text" class="form-control price-input"
+																placeholder="12">
+														</div>
+														<div class="col-md-8 col-md-offset-1 no-pad">
+															<select class="form-control price-input">
+																<option selected>Months</option>
+																<option>Days</option>
+																<option>Years</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="free-tab none" id="vouchersVExpiryTab3">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="add-item" id="vouchersAddClient">
+							<span>+</span>
+						</div>
+
+					</section>
+				</div>
+
+				<div class="clearfix"></div>
+
+				<div class="col-md-4">
+					<div class="row">
+						<table class="table" id="discountsList">
+						  <tbody>
+								<colgroup>
+									<col span="1" style="width: 38%">
+									<col span="2" style="width: 25%">
+								</colgroup>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<table class="table" id="campaignsList">
+						  <tbody>
+								<colgroup>
+									<col span="1" style="width: 38%">
+									<col span="2" style="width: 25%">
+								</colgroup>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<table class="table" id="vouchersList">
+						  <tbody>
+								<colgroup>
+									<col span="1" style="width: 38%">
+									<col span="2" style="width: 25%">
+								</colgroup>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</main>
+
+	<script src="js/blocks-handler.js"></script>
+</body>
+
+</html>

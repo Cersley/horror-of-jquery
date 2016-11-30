@@ -1,0 +1,236 @@
+/**::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+
+}
+body input:required:valid,
+body textarea:required:valid {
+
+}*/
+ul {
+	margin: 0;
+}
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+}
+label {
+	font-weight: normal;
+	margin: 0;
+}
+.table {
+	margin-bottom: 0;
+}
+.no-pad {
+	padding-left: 0;
+	padding-right: 0;
+}
+.no-pad-l {
+	padding-left: 0
+}
+.no-pad-r {
+	padding-right: 0
+}
+.appear {
+	display: block;
+}
+.none {
+	display: none;
+}
+
+.active-tab {
+	background-color: #337ab7;
+	color: #fff;
+}
+.nav {
+	font-size: 1.3em;
+}
+.list-menu {
+	border-bottom: 1px solid;
+	height: 40px;
+}
+.list-menu li {
+	padding: 0 10px;
+	line-height: 39px;
+}
+
+
+.default-price {
+	margin: 15px 0;
+}
+.block-name {
+	font-family: "RobotoMedium", sans-serif;
+	font-size: 1.4em;
+	margin-bottom: 20px;
+}
+.price-model-wrapper {
+	margin-top: 20px;
+}
+.price-label {
+	font-size: 0.9em;
+	line-height: 28px;
+}
+.price-input, .flat-input, .flat-output {
+	height: 28px;
+	display: inline-block;
+}
+.flat-input {
+	width: 32%;
+}
+.price-btn {
+	font-size: 0.9em;
+}
+.flat-btn {
+	height: 25px;
+	padding: 2px 10px;
+	margin-left: 10px;
+}
+.price-btn {
+	width: 30%;
+}
+.flat-btn {
+	padding: 0 20px;
+}
+.price-btn:first-child {
+	width: inherit;
+}
+.tabs {
+	margin-top: 15px;
+}
+
+
+
+.t-price {
+	position: relative;
+}
+.t-price table{
+	font-size: 0.9em;
+	text-align: center;
+	border-collapse: separate;
+	border-radius: 6px;
+}
+.t-price thead tr:nth-child(1) {
+	text-align: left;
+}
+.t-price tr>td {
+	padding: 2px 6px !important;
+}
+.t-price tfoot .var-input-field td {
+	padding: 0!important
+}
+.var-btn-wrapper {
+	float: right;
+}
+.var-btn-wrapper > span {
+	margin: 0 5px;
+}
+.variable-input {
+	padding: 1px;
+	text-align: center;
+}
+.add-row {
+	margin: 0 auto;
+	border: 1px solid;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+}
+.add-row span {
+	font-size: 1.8em;
+	line-height: 20px;
+}
+.add-row:hover {
+	cursor: pointer;
+	background-color: #ebe6e6;
+}
+
+
+.infin {
+	padding: 0 0;
+	font-size: 1.6em;
+}
+.inf {
+	text-align: center;
+	font-size: 1.6em;
+	padding: 0 !important;
+  font-size: 1.6em;
+}
+.date-tab {
+
+}
+.date-tab input {
+	text-align: center;
+}
+.date-tab select, .client-list select {
+	padding: 0 0 0 10px;
+	-webkit-appearance: none;
+	appearance: none;
+	background: transparent
+		url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png")
+		no-repeat 95%;
+}
+
+.free-tab, .plays-tab, .price-tab {
+	padding-left: 20px;
+}
+.price-tab {
+	margin-bottom: 5px;
+}
+
+.client-list {
+	margin-bottom: 20px;
+}
+.voucher {
+	margin-bottom: 2px;
+}
+.add-item {
+	margin: 20px auto;
+	border: 1px solid;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+}
+.add-item span {
+	font-size: 2.5em;
+	line-height: 35px;
+}
+.add-item:hover {
+	cursor: pointer;
+	background-color: #ebe6e6;
+}
+.voucher-code {
+	position: absolute;
+	font-size: 2em;
+	right: -20px;
+	top: -9px;
+}
+.voucher-code:hover {
+	cursor: pointer;
+}
+
+.redact-list {
+	line-height: 22px;
+	font-size: 1.03em;
+	float: right;
+	padding-left: 2px;
+}
+.redact-list:first-child:hover, .redact-list:last-child:hover {
+	cursor: pointer;
+}
